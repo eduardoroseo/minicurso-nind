@@ -4,17 +4,17 @@
         <h3>Cadastrar Cerveja</h3>
     </div>
     <div class="col-xs-6 text-right">
-        <a href="<?= Host::getHost() ?>cerveja/cadastrar" class="btn btn-sm btn-default">Cadastrar</a>
+        <a href="<?= Host::getHost() ?>cerveja/listar" class="btn btn-sm btn-default">Voltar</a>
     </div>
 </div>
 <div class="row">
     <br>
-    <form class="form-horizontal" action="<?= Host::getHost() ?>cerveja/salvar" method="POST">
+    <form class="form-horizontal" action="<?= Host::getHost() ?>cerveja/salvarEdicao" method="POST">
         <!-- Text input-->
         <div class="form-group">
             <label class="col-md-4 control-label" for="nome">Nome da Cerveja</label>
             <div class="col-md-4">
-                <input id="nome" name="nome" placeholder="Ex.: Budweiser" class="form-control" type="text">
+                <input id="nome" name="nome" placeholder="Ex.: Budweiser" class="form-control" type="text" value="<?= $this->view->cerveja->getNome() ?>">
             </div>
         </div>
 

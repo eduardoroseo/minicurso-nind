@@ -28,7 +28,8 @@
                     <td><?= $cerveja->getTeorAlcoolico() ?></td>
                     <td><?= $cerveja->getTemperaturaIdeal() ?></td>
                     <td>
-                        <a href=""></a>
+                        <a class="btn btn-xs btn-danger" href="<?= Host::getHost() ?>cerveja/excluir?id=<?= $cerveja->getId() ?>">Excluir</a>
+                        <a class="btn btn-xs btn-primary" href="<?= Host::getHost() ?>cerveja/editar?id=<?= $cerveja->getId() ?>">Editar</a>
                     </td>
                 </tr>
                 <?php endforeach; ?>

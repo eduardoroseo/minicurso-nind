@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="col-md-12">
+        <div class="col-md-6 col-md-offset-3">
             <?= $this->content() ?>
         </div>
     </div>
